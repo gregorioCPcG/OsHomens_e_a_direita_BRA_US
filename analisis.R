@@ -12,16 +12,7 @@
   
 # https://www.cesop.unicamp.br/por/banco_de_dados/v/1446
 
-# https://infograficos.gazetadopovo.com.br/economia/pib-do-brasil/
-
-# https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=US
-
-
-
-
-#ESQ - democr, pt, autodeclaração
-#DIR - repu, Alckmin e Bolsonaro
-# pegar dados do brasil de 1985 (voto masculino)
+#1 pegar dados do brasil de 1985 (voto masculino)
 library(haven)
 X00507 <- read_sav("00507.SAV")
 library(tidyverse)
@@ -58,6 +49,8 @@ prop.table(table(X00328$p15))
 #72 é 100
 (45*100)/72
 (27*100)/72
+
+rm(X00328)
 
 #
 library(readxl)
